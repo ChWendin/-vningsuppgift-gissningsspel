@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="game">
+    <div class="container">
+        <h1>Gissa ett nummer mellan 1 och 100.</h1>
+        <h3>Du har 7 försök på dig att gissa rätt!</h3>
+        <input type="number" id="guessInput" placeholder="Skriv ditt tal" min="1" max="100">
+        <button id="submitGuess">Gissa</button>
+        <p id="feedback"></p>
+        <p id="attempts"></p>
+    </div>
+
+    <div class="guess-list">
+        <h3>Dina gissningar:</h3>
+        <ul id="gissningslista">
+            
+            
+        </ul>
+    </div>
+
+</main>
+       
+    <script src="script.js"></script>    
+</body>
+</html>
