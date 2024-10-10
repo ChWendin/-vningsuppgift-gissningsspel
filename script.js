@@ -1,5 +1,5 @@
 // Variabler
-let correctNumber = Math.round(Math.random() * 100) + 1; // Slumpa tal mellan 1 och 100
+let correctNumber = Math.round(Math.random() * 100); // Slumpa tal mellan 1 och 100
 let attempts = 0; // Räknar försök
 
 // Hämta element
@@ -23,6 +23,9 @@ submitGuess.addEventListener('click', function() {
         guessLi.style.color = 'green';
         guessInput.disabled = true; // Inaktivera input-fältet
         submitGuess.disabled = true; // Inaktivera knappen
+        
+
+
     } else if (userGuess > correctNumber) {
         feedback.textContent = 'För högt! Försök igen.';
         feedback.style.color = 'red';

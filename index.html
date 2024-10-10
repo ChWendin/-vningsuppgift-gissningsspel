@@ -11,22 +11,31 @@
     <div class="container">
         <h1>Gissa ett nummer mellan 1 och 100.</h1>
         <h3>Du har 7 försök på dig att gissa rätt!</h3>
-        <input type="number" id="guessInput" placeholder="Skriv ditt tal" min="1" max="100">
-        <button id="submitGuess">Gissa</button>
+        <div class="form">
+            <input type="number" id="guessInput" placeholder="Skriv ditt tal" min="1" max="100">
+            <button id="submitGuess">Gissa</button>
+        </div>
         <p id="feedback"></p>
         <p id="attempts"></p>
+        
     </div>
-
+    
+    
     <div class="guess-list">
         <h3>Dina gissningar:</h3>
         <ul id="gissningslista">
-            
-            
         </ul>
+        <button class="btn-play"><a href="index.html">
+            Spela igen! 
+        </a></button>
     </div>
+            
+          
 
 </main>
        
     <script src="script.js"></script>    
 </body>
 </html>
+
+        
